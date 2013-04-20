@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Site 1</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.js"></script>
+	<script type="text/javascript">
+		function getUsers() {
+			$.ajax({
+				url: 'api/users.php'
+			}).done(function(results) {
+				console.log(results);
+			});
+		}
+
+		function getWidgets() {
+			$.ajax({
+				url: 'http://site2.com:8888/api/widgets.php',
+				// type: 'PUT',
+				// headers: {
+				// 	"X-FOO-BAR": "0101"
+				// }
+				// dataType: 'jsonp'
+				// url: 'GETWIDGETS'
+			}).done(function(results) {
+				console.log(results);
+			});
+		}
+	</script>
+</head>
+<body>
+	<h1>Site 1</h1>
+</body>
+</html>

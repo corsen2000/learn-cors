@@ -1,0 +1,3 @@
+RewriteEngine on
+
+RewriteRule GETWIDGETS http://site2.com:8888/api/widgets.php [P]
